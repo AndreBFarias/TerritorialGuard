@@ -1,0 +1,39 @@
+# Virtual Environments
+.venv/
+venv/
+
+# Python Cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Logs
+*.log
+logs/
+
+# Dados gerados
+*.xlsx
+*.csv
+data/*.json
+
+# Secrets
+.env
+.env.*
+*.key
+*.pem
+credentials/
+!credentials/.gitkeep
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Desenvolvimento
+CLAUDE.md
+Dev_log/
+PDF_DASHBOARD/
