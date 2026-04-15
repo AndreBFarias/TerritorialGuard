@@ -1,13 +1,13 @@
 # Validador de Cidades
 
-Ferramenta de diagnostico automatico para o dashboard "Painel Estrategico - Territorial" (Looker Studio).
+Ferramenta de diagnostico automatico para o dashboard painel analítico territorial (Looker Studio).
 
 Dado um municipio, varre todas as tabelas do dashboard no BigQuery, identifica metricas zeradas e diagnostica a causa: dado ausente na fonte ou problema no JOIN/filtro do dbt.
 
 ## Requisitos
 
 - Python 3.10+
-- Acesso ao projeto BigQuery `br-mec-segape-dev`
+- Acesso ao projeto BigQuery `{GCP_PROJECT}`
 - Arquivo de credenciais da service account (keyfile JSON)
 
 ## Instalacao
@@ -73,7 +73,7 @@ O script gera um arquivo `.xlsx` com duas abas:
 
 Editar `config.py`:
 
-- `PROJETO_BQ`: projeto BigQuery (padrao: `br-mec-segape-dev`)
+- `PROJETO_BQ`: projeto BigQuery (padrao: `{GCP_PROJECT}`)
 - `KEYFILE`: caminho do arquivo de credenciais
 - `ANO_PADRAO`: ano para filtro (padrao: 2025)
 - `LIMITE_BYTES_SESSAO`: limite de custo por sessao (padrao: 500 MB)

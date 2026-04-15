@@ -37,7 +37,7 @@
 ### 4.3 Formato do Relatorio Terminal
 ```
 === VALIDACAO: Andradina - SP ===
-Data: 2026-04-06 | Projeto: br-mec-segape-dev
+Data: 2026-04-06 | Projeto: {GCP_PROJECT}
 Tabelas escaneadas: 24 | Com dados: 15 | Zeros: 7 | Erros: 2
 Custo estimado: 45 MB processados
 

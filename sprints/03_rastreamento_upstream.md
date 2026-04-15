@@ -46,14 +46,14 @@ Se a fonte tambem nao tem: problema na ingestao ou o dado realmente nao existe.
       {
         "nivel": "educacao_politica",
         "tabela": "gaia_pronatec_vaga",
-        "gcp": "br-mec-segape-dev.educacao_politica_gaia.gaia_pronatec_vaga",
+        "gcp": "{GCP_PROJECT}.educacao_politica_gaia.gaia_pronatec_vaga",
         "total": 0,
         "status": "ZERO"
       },
       {
         "nivel": "raw",
         "tabela": "stg_gaia_pronatec_vaga",
-        "gcp": "br-mec-segape-dev.raw_csv_gaia.stg_gaia_pronatec_vaga",
+        "gcp": "{GCP_PROJECT}.raw_csv_gaia.stg_gaia_pronatec_vaga",
         "total": 0,
         "status": "ZERO"
       }
@@ -66,7 +66,7 @@ Se a fonte tambem nao tem: problema na ingestao ou o dado realmente nao existe.
       {
         "nivel": "educacao_politica",
         "tabela": "sisu_vaga_ofertada",
-        "gcp": "br-mec-segape-dev.educacao_politica_gaia.sisu_vaga_ofertada",
+        "gcp": "{GCP_PROJECT}.educacao_politica_gaia.sisu_vaga_ofertada",
         "total": 12,
         "status": "OK"
       }

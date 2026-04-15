@@ -100,7 +100,7 @@ Nunca usar nomes de tabelas hardcoded:
 {{ source('schema_fonte', 'tabela') }}
 
 -- Errado
-`br-mec-segape-dev.schema.tabela`
+`{GCP_PROJECT}.schema.tabela`
 ```
 
 ### 8. Colunas não utilizadas
@@ -132,7 +132,7 @@ variante_b AS (
 ### Formato de descrição do modelo (obrigatório)
 
 ```yaml
-description: "Descrição breve do modelo. // Frequência de atualização: Mensal. // Partição: Estado e Município. // Nível da observação: id_pessoa. // Fonte: CAPES. // Gestora dos dados: CAPES. // Tratamento dos dados: SEGAPE."
+description: "Descrição breve do modelo. // Frequência de atualização: Mensal. // Partição: Estado e Município. // Nível da observação: id_pessoa. // Fonte: CAPES. // Gestora dos dados: CAPES. // Tratamento dos dados: sua-org."
 ```
 
 **Os separadores `//` são críticos** — um script do catálogo de dados depende deles para parsing automático.
@@ -146,7 +146,7 @@ description: "Descrição breve do modelo. // Frequência de atualização: Mens
 | Nível da observação | Campos que compõem a chave primária (filtrar por eles retorna linha única) | — |
 | Fonte | Órgão ou sistema de origem dos dados | — |
 | Gestora dos dados | Órgão responsável pela gestão | — |
-| Tratamento dos dados | Quem fez o tratamento (geralmente SEGAPE) | — |
+| Tratamento dos dados | Quem fez o tratamento (geralmente sua-org) | — |
 
 ### Descrição de colunas
 

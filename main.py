@@ -50,7 +50,7 @@ def _menu_principal() -> None:
     console.print(
         Panel(
             "[bold]Validador de Cidades[/bold]\n"
-            "Diagnostico automatico do Painel Estrategico Territorial",
+            "Diagnostico automatico do painel analítico territorial",
             border_style="blue",
             padding=(1, 2),
         )

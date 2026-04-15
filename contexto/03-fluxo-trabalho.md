@@ -17,7 +17,7 @@ feature/xxx  ──PR──>  develop  ──PR──>  main
 ### 1. Abrir o projeto
 
 ```bash
-cd ~/Desenvolvimento/MEC/pipelines-main
+cd ~/Desenvolvimento/sua organização/pipelines-main
 ```
 
 ### 2. Sincronizar com o remoto
@@ -56,8 +56,8 @@ Executar queries de validação para confirmar que os dados estão corretos:
 
 ```bash
 export PATH="$HOME/google-cloud-sdk/bin:$PATH"
-bq query --project_id=br-mec-segape-dev --use_legacy_sql=false \
-  "SELECT COUNT(*) FROM \`br-mec-segape-dev.schema.tabela\`"
+bq query --project_id={GCP_PROJECT} --use_legacy_sql=false \
+  "SELECT COUNT(*) FROM \`{GCP_PROJECT}.schema.tabela\`"
 ```
 
 ### 7. Executar pre-commit
@@ -150,9 +150,9 @@ Misturar escopos dificulta a revisão e pode atrasar a aprovação.
 Antes de commitar, confirmar que a identidade git está correta:
 
 ```bash
-git config user.name   # Deve mostrar seu usuário GitHub MEC
-git config user.email  # Deve mostrar seu email @mec.gov.br
-gh auth status         # Deve mostrar a conta MEC ativa
+git config user.name   # Deve mostrar seu usuário GitHub sua organização
+git config user.email  # Deve mostrar seu email @seu-dominio.gov.br
+gh auth status         # Deve mostrar a conta sua organização ativa
 ```
 
 ---

@@ -2,7 +2,7 @@
 
 ## Problema
 
-O dashboard "Painel Estrategico - Territorial" (Looker Studio) exibe metricas por municipio.
+O dashboard painel analítico territorial (Looker Studio) exibe metricas por municipio.
 Algumas cidades retornam 0 em metricas que antes tinham valor (ex: Andradina-SP).
 Nao sabemos se o dado morreu no JOIN do dbt ou se nunca chegou ao data lake.
 
@@ -45,7 +45,7 @@ Ferramenta Python automatizada que, dado um municipio:
 ## Uso
 
 ```bash
-cd ~/Desenvolvimento/MEC/validador_cidades
+cd ~/Desenvolvimento/sua organização/validador_cidades
 ./install.sh
 .venv/bin/python validador.py --municipio "Andradina - SP" --ano 2025
 ```

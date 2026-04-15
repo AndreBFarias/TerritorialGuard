@@ -19,14 +19,14 @@ O usuario precisa saber:
 
 ```
 Camada 1: RAW (data lake)
-  br-mec-segape-dev.raw_csv_*.stg_*
-  br-mec-segape-dev.raw_api_*.stg_*
+  {GCP_PROJECT}.raw_csv_*.stg_*
+  {GCP_PROJECT}.raw_api_*.stg_*
 
 Camada 2: POLITICA (logica de negocio)
-  br-mec-segape-dev.educacao_politica_*.*
+  {GCP_PROJECT}.educacao_politica_*.*
 
 Camada 3: PAINEL (dashboard)
-  br-mec-segape-dev.projeto_painel_ministro.painel_*
+  {GCP_PROJECT}.projeto_painel_ministro.painel_*
 ```
 
 O validador atual verifica a camada 3. Esta sprint adiciona verificacao das camadas 1 e 2.

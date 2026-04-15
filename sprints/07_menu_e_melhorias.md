@@ -56,14 +56,14 @@ $ python validador.py
 
   SISTEC Matriculas
   Tabela: painel_ept_sistec
-  GCP: br-mec-segape-dev.projeto_painel_ministro.painel_ept_sistec
+  GCP: {GCP_PROJECT}.projeto_painel_ministro.painel_ept_sistec
   Filtro: CAST(id AS STRING) = '3502101' AND ano = 2025
   Registros: 0
   Valor: NULL
 
   Upstream:
     sistec_ciclo_matricula: 6.593 registros
-    GCP: br-mec-segape-dev.educacao_politica_sistec.sistec_ciclo_matricula
+    GCP: {GCP_PROJECT}.educacao_politica_sistec.sistec_ciclo_matricula
     WHERE: CAST(id_municipio AS STRING) = '3502101'
 
   Diagnostico: PERDEU_NO_PAINEL

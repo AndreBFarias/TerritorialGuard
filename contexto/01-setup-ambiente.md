@@ -5,7 +5,7 @@
 - Python 3.10
 - Google Cloud SDK (`gcloud`, `bq`)
 - Git com SSH configurado para `github.com`
-- Acesso ao projeto BigQuery `br-mec-segape-dev`
+- Acesso ao projeto BigQuery `{GCP_PROJECT}`
 
 ---
 
@@ -14,7 +14,7 @@
 ### 1. Clonar o repositório
 
 ```bash
-git clone git@github.com:SEGAPE/pipelines.git pipelines-main
+git clone git@github.com:sua-org/pipelines.git pipelines-main
 cd pipelines-main
 ```
 
@@ -50,14 +50,14 @@ cp dev/profiles-example.yml dev/profiles.yml
 
 Editar `dev/profiles.yml` e preencher:
 - `keyfile`: caminho para o arquivo JSON da service account
-- `project`: `br-mec-segape-dev`
+- `project`: `{GCP_PROJECT}`
 - `dataset`: `dbt`
 
 ### 7. Configurar identidade git
 
 ```bash
 git config --local user.name "seu-usuario-github"
-git config --local user.email "seu-email@mec.gov.br"
+git config --local user.email "seu-email@seu-dominio.gov.br"
 ```
 
 ### 8. Verificar o ambiente
@@ -95,7 +95,7 @@ Para consultas diretas no BigQuery:
 
 ```bash
 export PATH="$HOME/google-cloud-sdk/bin:$PATH"
-bq query --project_id=br-mec-segape-dev --use_legacy_sql=false "SELECT 1"
+bq query --project_id={GCP_PROJECT} --use_legacy_sql=false "SELECT 1"
 ```
 
 ---
@@ -105,5 +105,5 @@ bq query --project_id=br-mec-segape-dev --use_legacy_sql=false "SELECT 1"
 | Item | Comando | Resultado esperado |
 |------|---------|-------------------|
 | dbt compile | `../.pipelines/bin/dbt compile --profiles-dir ../dev` | Exit 0 |
-| Identidade git | `git config --local user.email` | Seu email MEC |
-| BigQuery | `bq query --project_id=br-mec-segape-dev --use_legacy_sql=false "SELECT 1"` | Retorna 1 |
+| Identidade git | `git config --local user.email` | Seu email sua organização |
+| BigQuery | `bq query --project_id={GCP_PROJECT} --use_legacy_sql=false "SELECT 1"` | Retorna 1 |

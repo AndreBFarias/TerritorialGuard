@@ -2,9 +2,9 @@
 
 ## Visão Geral
 
-- **Projeto dbt**: `br_mec_segape`
+- **Projeto dbt**: `{DBT_PROJECT}`
 - **Banco de dados**: Google BigQuery
-- **Projeto BigQuery (dev)**: `br-mec-segape-dev`
+- **Projeto BigQuery (dev)**: `{GCP_PROJECT}`
 - **Raiz dbt**: `queries/`
 - **Profile**: `queries` (definido em `dev/profiles.yml`)
 - **Status**: produção
@@ -51,7 +51,7 @@ que define a materialização e o propósito de cada camada:
 
 ## Fontes de Dados Principais
 
-INEP, SIMEC, CadUnico, CAPES, FNDE, IBGE, SISU, ENEM, FIES, PROUNI
+INEP, SIsua organização, CadUnico, CAPES, FNDE, IBGE, SISU, ENEM, FIES, PROUNI
 
 ---
 

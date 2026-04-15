@@ -67,18 +67,18 @@ Modelos: painel_pdmlic
 
 ```
 Camada 1: SOURCE (data lake / staging)
-  → br-mec-segape-dev.raw_csv_*.stg_*
-  → br-mec-segape-dev.raw_api_*.stg_*
-  → br-mec-segape-dev.raw_bd_*.*
+  → {GCP_PROJECT}.raw_csv_*.stg_*
+  → {GCP_PROJECT}.raw_api_*.stg_*
+  → {GCP_PROJECT}.raw_bd_*.*
 
 Camada 2: POLITICA (logica de negocio)
-  → br-mec-segape-dev.educacao_politica_*.*
+  → {GCP_PROJECT}.educacao_politica_*.*
 
 Camada 3: INDICADOR (KPIs)
-  → br-mec-segape-dev.indicador_politica_*.*
+  → {GCP_PROJECT}.indicador_politica_*.*
 
 Camada 4: PAINEL (dashboard - tabela final)
-  → br-mec-segape-dev.projeto_painel_ministro.painel_*
+  → {GCP_PROJECT}.projeto_painel_ministro.painel_*
 ```
 
 O validador deve ser capaz de descer da camada 4 ate a camada 1 automaticamente.

@@ -45,7 +45,7 @@ Tabelas sem coluna_metrica preenchida: o scanner faz apenas COUNT(*) como verifi
 - [ ] Retorna lista estruturada de resultados
 
 ### 2.3 config.py - Configuracao
-- [ ] Projeto BQ padrao: br-mec-segape-dev
+- [ ] Projeto BQ padrao: {GCP_PROJECT}
 - [ ] Caminho keyfile
 - [ ] Limite de bytes por query (protetor de custo)
 - [ ] Timeout padrao

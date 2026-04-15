@@ -28,7 +28,7 @@ Formato do linhagem.json:
     "fontes": [
       {
         "nome": "inep_base_censo_escolar",
-        "gcp": "br-mec-segape-dev.indicador_politica_inep_base.inep_base_censo_escolar",
+        "gcp": "{GCP_PROJECT}.indicador_politica_inep_base.inep_base_censo_escolar",
         "coluna_municipio": "id_municipio",
         "tipo": "source"
       }

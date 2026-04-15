@@ -1,8 +1,9 @@
 """Configuracao do validador de cidades."""
 
+import os
 from pathlib import Path
 
-PROJETO_BQ = "br-mec-segape-dev"
+PROJETO_BQ = os.environ.get("GCP_PROJECT", "seu-projeto-gcp")
 KEYFILE = Path(__file__).parent / "credentials" / "service_account.json"
 TIMEOUT_SEGUNDOS = 60
 LIMITE_BYTES_SESSAO = 500 * 1024 * 1024  # 500 MB

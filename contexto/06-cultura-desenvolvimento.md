@@ -1,4 +1,4 @@
-# Guia 06 — Cultura de Desenvolvimento SEGAPE
+# Guia 06 — Cultura de Desenvolvimento sua-org
 
 Este guia reúne práticas e princípios que a equipe aplica no dia a dia.
 Não são regras arbitrárias — cada uma surgiu de problemas reais encontrados em produção.

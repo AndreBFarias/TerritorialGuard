@@ -114,7 +114,7 @@ def _criar_aba_guia(wb: Workbook) -> None:
     corpo_font = Font(size=10, name="Calibri")
 
     linhas = [
-        ("Validador de Cidades", "Diagnostico automatico do Painel Estrategico Territorial", titulo_font),
+        ("Validador de Cidades", "Diagnostico automatico do painel analítico territorial", titulo_font),
         ("", "", None),
         ("Como funciona", "O script le as metricas da aba Input, executa no BigQuery e preenche a aba Output.", subtitulo_font),
         ("", "", None),

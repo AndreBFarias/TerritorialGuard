@@ -92,7 +92,7 @@ Ao criar uma branch nova a partir de `develop` e tentar fazer o primeiro push,
 o hook de pre-push pode bloquear com a mensagem:
 
 ```
-[pre-push] BLOQUEADO: Commits com author email incorreto para contexto MEC
+[pre-push] BLOQUEADO: Commits com author email incorreto para contexto sua organização
 ```
 
 Isso acontece porque, para branches que ainda não existem no remoto, o hook

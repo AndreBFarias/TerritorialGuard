@@ -1,10 +1,10 @@
 """Definicao das metricas do dashboard e instrucoes de coleta.
 
-Cada metrica mapeia uma secao do Painel Estrategico Territorial
+Cada metrica mapeia uma secao do painel analítico territorial
 para uma tabela e expressao SQL no BigQuery.
 """
 
-PROJETO = "br-mec-segape-dev"
+PROJETO = "{GCP_PROJECT}"
 SCHEMA = f"{PROJETO}.projeto_painel_ministro"
 
 METRICAS: list[dict] = [
