@@ -81,7 +81,7 @@ Editar `config.py`:
 ## Estrutura
 
 ```
-validador_cidades/
+TerritorialGuard/
   main.py               # Ponto de entrada (CLI)
   validador.py           # Core: queries, execucao, classificacao
   executor_bq.py         # Cliente BigQuery

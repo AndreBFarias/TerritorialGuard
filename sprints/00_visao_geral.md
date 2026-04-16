@@ -45,7 +45,7 @@ Ferramenta Python automatizada que, dado um municipio:
 ## Uso
 
 ```bash
-cd ~/Desenvolvimento/sua organização/validador_cidades
+cd ~/Desenvolvimento/sua organização/TerritorialGuard
 ./install.sh
 .venv/bin/python validador.py --municipio "Andradina - SP" --ano 2025
 ```
@@ -53,7 +53,7 @@ cd ~/Desenvolvimento/sua organização/validador_cidades
 ## Estrutura
 
 ```
-validador_cidades/
+TerritorialGuard/
   validador.py              <- CLI + metricas + execucao + xlsx
   executor_bq.py            <- cliente BigQuery
   config.py                 <- configuracao

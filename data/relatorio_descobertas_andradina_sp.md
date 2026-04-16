@@ -288,7 +288,7 @@ ETI (proposta 4527/2024, Edital 1). Isso triplica o valor de investimento se som
 ## 10. Como Reproduzir
 
 ```bash
-cd ~/Desenvolvimento/sua organização/validador_cidades
+cd ~/Desenvolvimento/sua organização/TerritorialGuard
 .venv/bin/python validador.py --municipio "Andradina - SP" --ano 2025 --upstream
 ```
 
