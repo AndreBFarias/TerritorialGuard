@@ -7,8 +7,8 @@ onde o dado pode ser verificado. Usado pelo validador com --upstream.
 import logging
 from typing import Optional
 
-import config
-from executor_bq import ExecutorBQ
+from . import config
+from .executor_bq import ExecutorBQ
 
 logger = logging.getLogger(__name__)
 

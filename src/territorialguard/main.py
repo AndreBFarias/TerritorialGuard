@@ -23,9 +23,9 @@ from rich.panel import Panel
 from rich.prompt import Confirm, IntPrompt, Prompt
 from rich.table import Table
 
-import config
-from relatorio import gerar_xlsx, imprimir_resumo
-from validador import executar_validacao
+from . import config
+from .relatorio import gerar_xlsx, imprimir_resumo
+from .validador import executar_validacao
 
 console = Console()
 _ultimo_resultado: list[dict] = []

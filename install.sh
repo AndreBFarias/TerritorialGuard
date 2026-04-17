@@ -15,7 +15,8 @@ python3.10 -m venv "$VENV_DIR" 2>/dev/null || python3 -m venv "$VENV_DIR"
 
 echo "Instalando dependencias..."
 "$VENV_DIR/bin/pip" install --quiet --upgrade pip
-"$VENV_DIR/bin/pip" install --quiet -r "$SCRIPT_DIR/requirements.txt"
+"$VENV_DIR/bin/pip" install --quiet -e "$SCRIPT_DIR"
 
 echo "Instalacao concluida."
-echo "Uso: $VENV_DIR/bin/python main.py --municipio 'Andradina - SP'"
+echo "Uso: $VENV_DIR/bin/territorialguard --municipio 'Andradina - SP'"
+echo "Ou:  $VENV_DIR/bin/python -m territorialguard.main --municipio 'Andradina - SP'"

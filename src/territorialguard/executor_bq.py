@@ -6,7 +6,7 @@ from typing import Optional
 from google.cloud import bigquery
 from google.oauth2 import service_account
 
-import config
+from . import config
 
 logger = logging.getLogger(__name__)
 

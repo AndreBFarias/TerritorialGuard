@@ -12,8 +12,8 @@ from openpyxl.worksheet.datavalidation import DataValidation
 from rich.console import Console
 from rich.table import Table
 
-import config
-from metricas import METRICAS, INSTRUCOES_DASHBOARD
+from . import config
+from .metricas import METRICAS, INSTRUCOES_DASHBOARD
 
 logger = logging.getLogger(__name__)
 console = Console()

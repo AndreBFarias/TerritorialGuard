@@ -8,10 +8,10 @@ from typing import Optional
 from openpyxl import load_workbook
 from rich.console import Console
 
-import config
-from executor_bq import ExecutorBQ
-from metricas import METRICAS as METRICAS_PADRAO
-from relatorio import imprimir_linha
+from . import config
+from .executor_bq import ExecutorBQ
+from .metricas import METRICAS as METRICAS_PADRAO
+from .relatorio import imprimir_linha
 
 logger = logging.getLogger(__name__)
 console = Console()

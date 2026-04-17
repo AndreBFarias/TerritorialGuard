@@ -1,0 +1,48 @@
+[project]
+name = "territorialguard"
+version = "2.0.0"
+description = "Validador de metricas territoriais em dashboards Looker Studio / BigQuery"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "GPL-3.0-or-later"
+authors = [
+    { name = "Andre Farias", email = "andre.dsbf@gmail.com" },
+]
+dependencies = [
+    "google-cloud-bigquery>=3.27.0",
+    "google-auth>=2.36.0",
+    "openpyxl>=3.1.5",
+    "rich>=13.9.4",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-cov>=4.0",
+    "ruff>=0.4",
+]
+
+[project.scripts]
+territorialguard = "territorialguard.main:main"
+
+[project.urls]
+Repository = "https://github.com/AndreBFarias/TerritorialGuard"
+Issues = "https://github.com/AndreBFarias/TerritorialGuard/issues"
+
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+target-version = "py310"
+line-length = 120
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
